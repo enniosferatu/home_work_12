@@ -1,0 +1,16 @@
+@use "../pressets" as *;
+
+.container {
+  width: min(100% - $gap-lg, $container-primary);
+  margin-inline: auto;
+
+  &--sm {
+    width: min(100% - $gap-lg, $container-sm);
+  }
+}
+
+
+
+.visually-hidden {
+  display: none;
+}

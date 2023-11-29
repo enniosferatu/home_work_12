@@ -1,0 +1,27 @@
+@use "../../pressets" as *;
+
+.about {
+  color: $color-grey-light;
+}
+
+.section {
+  padding-top: 112px;
+  padding-bottom: 91px;
+
+  &__title {
+    color: $color-black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 39px;
+  }
+  &__description {
+    color: $color-secondary;
+    text-align: center;
+    line-height: $line-height-lg;
+  }
+}
+
+.process {
+  background-color: $color-light;
+}

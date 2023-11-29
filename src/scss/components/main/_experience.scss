@@ -1,0 +1,55 @@
+@use "../../pressets" as *;
+
+@mixin experience-ds {
+  display: flex;
+  gap: $gap;
+}
+
+.experience {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 94px 0;
+
+  &__container {
+    @include experience-ds;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    @media (max-width: 991.8px) {
+        justify-content: center;
+    }
+  }
+}
+
+
+.experience-item {
+  @include experience-ds;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-sm;
+  }
+
+  &__number {
+    font-size: 1.3125rem;
+    font-weight: 500;
+  }
+
+  &__text {
+    line-height: $line-height-lg;
+  }
+
+  &__image {
+    order: -1;
+  }
+
+  @media (max-width: 991.8px) {
+      flex-basis: 25%;
+  }
+}
+
+
+
+

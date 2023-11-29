@@ -1,0 +1,46 @@
+@use "../../pressets" as *;
+
+.header {
+  padding-top: 65px; /*89px*/
+  padding-bottom: 141px;
+  background-color: $color-grey-light;
+
+  @media (min-width: 992px) {
+      min-height: 700px;
+  }  
+}
+
+.navbar {
+  margin-bottom: 134px;
+
+  &__list {
+    display: flex;
+    column-gap: 42px;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  }
+  
+  &__link {
+    display: block;
+    color: $color-black;
+    line-height: $line-height-lg;
+    letter-spacing: $letter-spacing;
+    padding: $gap-sm 0;
+
+    &:focus,
+    &:hover {
+      color: $color-primary;
+    }
+  } 
+
+  @media (max-width: 991.8px) {
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
